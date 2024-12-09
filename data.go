@@ -35,6 +35,7 @@ func main() {
 		fmt.Println(err_2)
 	}
 	fmt.Printf("Sum of above : %v", result_with_const)
+	// handleRequests()
 }
 
 func add_two_number(a int, b int) (int, error) {

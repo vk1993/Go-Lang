@@ -8,34 +8,34 @@ import (
 const secondInput = 200
 
 func main() {
-	var stringResult, intysy, err3 = errorExample("error_Test")
-	var i, i_1 int
+	// var stringResult, intysy, err3 = errorExample("error_Test")
+	// var i, i_1 int
 
-	if err3 != nil {
-		fmt.Println(err3.Error())
-		fmt.Println(stringResult)
-		fmt.Println(intysy)
-	}
+	// if err3 != nil {
+	// 	fmt.Println(err3.Error())
+	// 	fmt.Println(stringResult)
+	// 	fmt.Println(intysy)
+	// }
 
-	fmt.Println("Let's start 1st sum function")
-	fmt.Print("Type 1st Number : ")
-	fmt.Scan(&i)
-	fmt.Print("Type 2nd Number : ")
-	fmt.Scan(&i_1)
-	result, err := add_two_number(i, i_1)
-	if err != nil {
-		fmt.Println(err)
-	}
+	// fmt.Println("Let's start 1st sum function")
+	// fmt.Print("Type 1st Number : ")
+	// fmt.Scan(&i)
+	// fmt.Print("Type 2nd Number : ")
+	// fmt.Scan(&i_1)
+	// result, err := add_two_number(i, i_1)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
 
-	fmt.Println("Sum of above : ", result)
+	// fmt.Println("Sum of above : ", result)
 
-	result_with_const, err_2 := add_two_number_with_const(i)
+	// result_with_const, err_2 := add_two_number_with_const(i)
 
-	if err_2 != nil {
-		fmt.Println(err_2)
-	}
-	fmt.Printf("Sum of above : %v", result_with_const)
-	// handleRequests()
+	// if err_2 != nil {
+	// 	fmt.Println(err_2)
+	// }
+	// fmt.Printf("Sum of above : %v", result_with_const)
+	handleRequests()
 }
 
 func add_two_number(a int, b int) (int, error) {

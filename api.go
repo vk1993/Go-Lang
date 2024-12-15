@@ -28,6 +28,6 @@ func getCreditScore(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleRequests() {
-	http.Handle("/stock", http.HandlerFunc(getCreditScore))
+	http.Handle("GET /stock", http.HandlerFunc(getCreditScore))
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
